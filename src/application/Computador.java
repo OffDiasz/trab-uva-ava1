@@ -29,7 +29,9 @@ public class Computador {
 		hard1.setSsd(ssdDigit);
 		hard1.setPlaca_Video(pvDigit);
 		hard1.setPlaca_Mae(pmDigit);
-		
+
+
+		//Método de imprimir
 		System.out.println("Total da sua memória ram: " + hard1.getMemRam() + " GB");
 		System.out.println("Memória total do seu ssd: " + hard1.getSsd() + " GB");
 		System.out.println("Modelo da sua placa de vídeo: " + hard1.getPlaca_Video());
