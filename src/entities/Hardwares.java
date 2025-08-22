@@ -60,17 +60,4 @@ public class Hardware {
 		this.placa_Mae = placa_Mae;
 	}
 
-	
-	//Método de imprimir
-	public void imprimir() {
-		System.out.println("Mémoria ram: " + this.memRam);
-		System.out.println("Memória no ssd: " + this.ssd);
-		System.out.println("Modelo da placa de vídeo: " + this.placa_Video);
-		System.out.println("Modelo da placa mãe: " + this.placa_Mae);
-		
-	}
-	
-	
-	
-
 }
