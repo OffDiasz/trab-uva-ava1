@@ -1,22 +1,32 @@
 package entities;
 
-public class Hardwares {
+public class Hardware {
 	
 	int memRam;
-	String ssd;
+	int ssd;
 	String placa_Video;
-	String hd;
+	String placa_Mae;
 	
-	public void Computador(){
-		
-	}
 
-	public Hardwares(int memRam, String ssd, String placa_Video, String hd) {
+	//Construtor default
+	
+	public Hardware() {
+		this.memRam = 0;
+		this.ssd = 0;
+		this.placa_Video = "Não informada";
+		this.placa_Mae = "Não informada";
+	}
+	
+	//Construtor com parâmetros
+	
+	public Hardware(int memRam, int ssd, String placa_Video, String placa_Mae) {
 		this.memRam = memRam;
 		this.ssd = ssd;
 		this.placa_Video = placa_Video;
-		this.hd = hd;
+		this.placa_Mae = placa_Mae;
 	}
+	
+	//Métodos de acesso (get/set)
 
 	public int getMemRam() {
 		return memRam;
@@ -26,11 +36,11 @@ public class Hardwares {
 		this.memRam = memRam;
 	}
 
-	public String getSsd() {
+	public int getSsd() {
 		return ssd;
 	}
 
-	public void setSsd(String ssd) {
+	public void setSsd(int ssd) {
 		this.ssd = ssd;
 	}
 
@@ -42,14 +52,23 @@ public class Hardwares {
 		this.placa_Video = placa_Video;
 	}
 
-	public String getHd() {
-		return hd;
+	public String getPlaca_Mae() {
+		return placa_Mae;
 	}
 
-	public void setHd(String hd) {
-		this.hd = hd;
+	public void setPlaca_Mae(String placa_Mae) {
+		this.placa_Mae = placa_Mae;
 	}
+
 	
+	//Método de imprimir
+	public void imprimir() {
+		System.out.println("Mémoria ram: " + this.memRam);
+		System.out.println("Memória no ssd: " + this.ssd);
+		System.out.println("Modelo da placa de vídeo: " + this.placa_Video);
+		System.out.println("Modelo da placa mãe: " + this.placa_Mae);
+		
+	}
 	
 	
 	
